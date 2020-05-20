@@ -14,3 +14,5 @@ let g:loaded_amake = 1
 " tie all up together
 
 command! Amake call amake#hello_world()
+
+" vim: filetype=vim:syntax=vim:ts=4:tw=0:sw=4:sts=4:expandtab:norl:
