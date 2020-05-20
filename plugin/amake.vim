@@ -13,6 +13,6 @@ let g:loaded_amake = 1
 " function to open a new buffer with particular contents
 " tie all up together
 
-command! Amake call amake#hello_world()
+command! Amake call amake#run()
 
 " vim: filetype=vim:syntax=vim:ts=4:tw=0:sw=4:sts=4:expandtab:norl:

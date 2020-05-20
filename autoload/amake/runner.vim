@@ -19,4 +19,13 @@ function! amake#runner#new(filetype) abort
     endtry
 endfunction
 
+function! amake#runner#run(runner, filename) abort
+    let args = a:runner.build_args(a:filename)
+    let output = amake#process#call(args)
+    return {
+                \ 'args': args,
+                \ 'output': output
+                \}
+endfunction
+
 " vim: filetype=vim:syntax=vim:ts=4:tw=0:sw=4:sts=4:expandtab:norl:
